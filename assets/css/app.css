@@ -1,0 +1,20 @@
+body {
+    background-color: lightgray;
+}
+
+.formSection {
+    margin-top: 30px;
+}
+
+.formSection p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.dashboardSection {
+    margin-top: 70px;
+}
+
+.reviewsWrapper {
+    margin-top: 70px;
+}

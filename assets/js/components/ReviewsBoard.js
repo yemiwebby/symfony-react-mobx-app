@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { observer } from "mobx-react"
 
 
-class Board extends Component {
+class ReviewsBoard extends Component {
     render() {
         const { store } = this.props
         return (
@@ -47,5 +47,5 @@ class Board extends Component {
     }
 }
 
-Board = observer(Board);
-export default Board;
+ReviewsBoard = observer(ReviewsBoard);
+export default ReviewsBoard;

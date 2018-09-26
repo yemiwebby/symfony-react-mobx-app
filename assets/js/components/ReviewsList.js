@@ -13,7 +13,7 @@ const List = (props) => {
     )
 }
 
-class Reviews extends Component {
+class ReviewsList extends Component {
     render() {
         const { store } = this.props
         return (
@@ -40,6 +40,6 @@ class Reviews extends Component {
     }
 }
 
-Reviews = observer(Reviews);
+ReviewsList = observer(ReviewsList);
 
-export default Reviews;
+export default ReviewsList;

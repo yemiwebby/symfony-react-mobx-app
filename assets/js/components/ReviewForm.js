@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Form extends Component {
+export default class ReviewForm extends Component {
 
     submitReview = (e) => {
         e.preventDefault();

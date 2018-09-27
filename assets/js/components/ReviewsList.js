@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import List from './List';
 
 export default class ReviewsList extends Component {
-    componentDidMount() {
-        console.log(this.props.store.reviews);
-    }
     render() {
         const reviewStore = this.props.store.reviews;
         return (

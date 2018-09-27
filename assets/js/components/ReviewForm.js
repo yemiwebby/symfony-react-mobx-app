@@ -43,7 +43,7 @@ export default class ReviewForm extends Component {
 
                                 <div className="col-md-12">
                                     <div className="form-group">
-                                        <button className="btn btn-success" type="submit"> SUBMIT REVIEW</button>
+                                        <button className="btn btn-success" type="submit"> SUBMIT YOUR REVIEW</button>
                                     </div>
                                 </div>
                             </div>

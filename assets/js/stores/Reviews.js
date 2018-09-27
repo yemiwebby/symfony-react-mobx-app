@@ -4,8 +4,8 @@ import { action, computed } from 'mobx';
 class Reviews {
 
     reviewList = [
-        { review: "This is a nice article", stars: 2 },
-        { review: "A lovely review", stars: 4 },
+        { review: "Absolutely wonderful - silky, sexy and comfortable", stars: 2 },
+        { review: "This shirt is very flattering to all due to the adjustable front tie", stars: 4 },
     ];
 
     @action

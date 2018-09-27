@@ -4,9 +4,6 @@ import { BrowserRouter, NavLink, Route, Switch, Link, Router } from 'react-route
 import ReviewForm from './components/ReviewForm';
 import ReviewsBoard from './components/ReviewsBoard';
 import Admin from './components/Admin';
-import ReviewsList from './components/ReviewsList';
-import Dashboard from './components/Sample';
-import Another from './components/Another';
 import { Provider } from 'mobx-react';
 import stores from "./stores";
 

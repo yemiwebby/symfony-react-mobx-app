@@ -43,14 +43,12 @@ class ReviewForm extends Component {
 
                                 <div className="col-md-12">
                                     <div className="form-group">
-                                        {/*<input type="text" name="review" id="review" placeholder="Write a review" className="form-control" />*/}
                                         <input type="text" name="review" ref={node => { this.review = node; }} id="review" placeholder="Write a review" className="form-control" />
                                     </div>
                                 </div>
 
                                 <div className="col-md-12">
                                     <div className="form-group">
-                                        {/*<select name="stars" id="stars" className="form-control">*/}
                                         <select name="stars" id="stars" className="form-control" ref={node => { this.stars = node; }}>
                                             <option value="1">1 Star</option>
                                             <option value="2">2 Star</option>
@@ -87,9 +85,6 @@ class ReviewForm extends Component {
 
                         </div>
                     </form>
-
-                    {/*<ReviewsList store={reviewStore}/>*/}
-
                 </div>
             </div>
         )

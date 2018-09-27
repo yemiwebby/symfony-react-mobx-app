@@ -5,7 +5,6 @@ class Reviews {
 
     reviewList = [
         { review: "Absolutely wonderful - silky, sexy and comfortable", stars: 2 },
-        { review: "This shirt is very flattering to all due to the adjustable front tie", stars: 4 },
     ];
 
     @action

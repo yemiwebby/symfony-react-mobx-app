@@ -16,14 +16,14 @@ import stores from '../stores';
 // });
 
 @inject("reviews")
-class ReviewForm extends Component {
+export default class ReviewForm extends Component {
 
     submitReview = (e) => {
         e.preventDefault();
         const review = this.review.value;
         const stars = Number(this.stars.value);
         this.props.reviews.addReview({review, stars});
-    }
+    };
 
     render() {
         return (
@@ -86,4 +86,3 @@ class ReviewForm extends Component {
         )
     }
 }
-export default ReviewForm;

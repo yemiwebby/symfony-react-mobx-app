@@ -22,11 +22,7 @@ class ReviewForm extends Component {
         e.preventDefault();
         const review = this.review.value;
         const stars = Number(this.stars.value);
-        this.props.reviews.addReview({review, stars})
-        // stores.reviews.addReview({review, stars});
-        // reviewStore.addReview({review, stars});
-        console.log(stores.reviews.reviewList);
-        // this.props.store.addReview({ review, stars })
+        this.props.reviews.addReview({review, stars});
     }
 
     render() {

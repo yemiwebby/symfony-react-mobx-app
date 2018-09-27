@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 export default class ReviewsBoard extends Component {
     render() {
-        const reviewStore = this.props.store;
+        const reviewStore = this.props.store.reviews;
         return (
             <div className="dashboardSection" style={{ marginTop: 70}}>
                 <div className="row">
@@ -16,7 +16,6 @@ export default class ReviewsBoard extends Component {
 
                                     </div>
                                     <div className="col-md-6 text-right">
-                                        {/*<p id="reviewCount">2</p>*/}
                                         <p id="reviewCount">{reviewStore.reviewCount}</p>
                                         <p className="announcement-text">Reviews</p>
                                     </div>
@@ -34,9 +33,8 @@ export default class ReviewsBoard extends Component {
 
                                     </div>
                                     <div className="col-md-6 text-right">
-                                        {/*<p id="averageScores">40</p>*/}
-                                        <p id="averageScores">{reviewStore.averageScore}</p>
-                                        <p className="announcement-text"> Average Scores </p>
+                                        <p id="averageScores">{reviewStore.averageStarCount}</p>
+                                        <p className="announcement-text"> Average Stars </p>
                                     </div>
                                 </div>
                             </div>

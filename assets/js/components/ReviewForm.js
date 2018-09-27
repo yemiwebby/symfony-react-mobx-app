@@ -1,19 +1,5 @@
 import React, { Component } from 'react';
-import { decorate, observable, action, computed } from "mobx";
-import { observer, inject } from "mobx-react";
-import ReviewsList from "./ReviewsList"
-// import Review from '../Store/Store';
-
-import stores from '../stores';
-
-
-// decorate(Store, {
-//     reviewList: observable,
-//     addReview: action,
-//     averageScore: computed,
-//     reviewCount: computed,
-//     fetchList: observable
-// });
+import { inject } from "mobx-react";
 
 @inject("reviews")
 export default class ReviewForm extends Component {

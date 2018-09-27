@@ -7,7 +7,7 @@ export default class ReviewsBoard extends Component {
         return (
             <div className="dashboardSection" style={{ marginTop: 70}}>
                 <div className="row">
-                    <div className="col-lg-6 col-md-6">
+                    <div className="col-lg-4 col-md-4">
                         <div className="card text-white bg-warning mb-6">
                             <div className="card-body">
                                 <div className="row">
@@ -24,13 +24,29 @@ export default class ReviewsBoard extends Component {
                         </div>
                     </div>
 
-                    <div className="col-lg-6 col-md-6">
+                    <div className="col-lg-4 col-md-4">
+                        <div className="card text-white bg-warning mb-6">
+                            <div className="card-body">
+                                <div className="row">
+                                    <div className="col-md-6">
+                                        <i className="fa fa-comments fa-5x"></i>
+
+                                    </div>
+                                    <div className="col-md-6 text-right">
+                                        <p id="reviewCount">{reviewStore.starCount}</p>
+                                        <p className="announcement-text">Total Star Count</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-md-4">
                         <div className="card text-white bg-info mb-6">
                             <div className="card-body">
                                 <div className="row">
                                     <div className="col-md-6">
                                         <i className="fa fa-star fa-5x"></i>
-
                                     </div>
                                     <div className="col-md-6 text-right">
                                         <p id="averageScores">{reviewStore.averageStarCount}</p>

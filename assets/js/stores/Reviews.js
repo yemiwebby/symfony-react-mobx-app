@@ -1,4 +1,4 @@
-import { observable, action, computed } from 'mobx';
+import { action, computed } from 'mobx';
 
 
 class Reviews {
@@ -32,7 +32,7 @@ class Reviews {
     @computed
     get averageStarCount() {
         let avr = 0;
-        this.reviewList.map(e => avr = avr + e.stars)
+        this.reviewList.map(e => avr = avr + e.stars);
         return avr / this.reviewList.length
     }
 }

@@ -11,7 +11,7 @@ import { Provider } from 'mobx-react';
 import stores from "./stores";
 
 
-export default class App extends Component {
+class App extends Component {
     render() {
         return (
             <Provider reviews={stores.reviews}>

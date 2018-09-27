@@ -5,7 +5,7 @@ export default class ReviewsList extends Component {
     render() {
         const reviewStore = this.props.store.reviews;
         return (
-            <div>
+            <div style={{ marginTop: 50 }}>
                 <div className="row">
                     <div className="col-md-12 col-lg-12">
                         <div className="card">

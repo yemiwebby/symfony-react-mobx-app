@@ -38,13 +38,6 @@ export default class App extends Component {
                 </div>
             </BrowserRouter>
             </Provider>
-            // <div className={App}>
-            //     <div>
-            //         <ReviewForm store={reviewStore}/>
-            //         <ReviewsBoard store={reviewStore}/>
-            //         <ReviewsList store={reviewStore}/>
-            //     </div>
-            // </div>
         )
     }
 }

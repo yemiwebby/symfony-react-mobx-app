@@ -4,6 +4,7 @@ body {
 
 .formSection {
     margin-top: 30px;
+    display: none;
 }
 
 .formSection p {

@@ -17,7 +17,6 @@ Encore
      * Each entry will result in one JavaScript file (e.g. app.js)
      * and one CSS file (e.g. app.css) if you JavaScript imports CSS.
      */
-    .enableReactPreset()
     .addEntry('js/app', './assets/js/app.js')
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
@@ -44,8 +43,10 @@ Encore
     // uncomment if you're having problems with a jQuery plugin
     //.autoProvidejQuery()
     .configureBabel(function (babelConfig) {
-        babelConfig.plugins = ["transform-object-rest-spread","transform-class-properties"]
+        // babelConfig.presets.push('es2015');
+        babelConfig.plugins = ["transform-object-rest-spread","transform-class-properties", "transform-decorators-legacy"]
     })
+    .enableReactPreset()
 ;
 
 module.exports = Encore.getWebpackConfig();

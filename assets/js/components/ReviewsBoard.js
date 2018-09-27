@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { observer } from "mobx-react"
 
 
-class ReviewsBoard extends Component {
+export default class ReviewsBoard extends Component {
     render() {
-        const { store } = this.props
+        const reviewStore = this.props.store;
         return (
-            <div className="dashboardSection">
+            <div className="dashboardSection" style={{ marginTop: 70}}>
                 <div className="row">
                     <div className="col-lg-6 col-md-6">
                         <div className="card text-white bg-warning mb-6">
@@ -17,7 +16,8 @@ class ReviewsBoard extends Component {
 
                                     </div>
                                     <div className="col-md-6 text-right">
-                                        <p id="reviewCount">{store.reviewCount}</p>
+                                        {/*<p id="reviewCount">2</p>*/}
+                                        <p id="reviewCount">{reviewStore.reviewCount}</p>
                                         <p className="announcement-text">Reviews</p>
                                     </div>
                                 </div>
@@ -34,7 +34,8 @@ class ReviewsBoard extends Component {
 
                                     </div>
                                     <div className="col-md-6 text-right">
-                                        <p id="averageScores">{store.averageScore}</p>
+                                        {/*<p id="averageScores">40</p>*/}
+                                        <p id="averageScores">{reviewStore.averageScore}</p>
                                         <p className="announcement-text"> Average Scores </p>
                                     </div>
                                 </div>
@@ -46,6 +47,3 @@ class ReviewsBoard extends Component {
         )
     }
 }
-
-ReviewsBoard = observer(ReviewsBoard);
-export default ReviewsBoard;

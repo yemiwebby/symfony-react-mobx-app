@@ -20,12 +20,17 @@ class Reviews {
 
     @computed
     get reviewCount() {
-        let count = this.reviewList.length;
-        return count;
+        return this.reviewList.length;
     }
 
     @computed
-    get averageScore() {
+    get starCount() {
+        let total = 0;
+        return this.reviewList.map(e => total = total + e.stars);
+    }
+
+    @computed
+    get averageStarCount() {
         let avr = 0;
         this.reviewList.map(e => avr = avr + e.stars)
         return avr / this.reviewList.length

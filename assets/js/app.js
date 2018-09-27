@@ -29,8 +29,8 @@ class App extends Component {
                     </nav>
 
                     <Switch>
-                        <Route path={"/admin-page"} component={Admin} />
                         <Route path={"/"} component={ReviewForm} />
+                        <Route path={"/admin-page"} component={Admin} />
                     </Switch>
                 </div>
             </BrowserRouter>

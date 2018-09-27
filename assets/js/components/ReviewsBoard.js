@@ -25,15 +25,15 @@ export default class ReviewsBoard extends Component {
                     </div>
 
                     <div className="col-lg-4 col-md-4">
-                        <div className="card text-white bg-warning mb-6">
+                        <div className="card text-white bg-secondary mb-6">
                             <div className="card-body">
                                 <div className="row">
                                     <div className="col-md-6">
-                                        <i className="fa fa-comments fa-5x"></i>
+                                        <i className="fa fa-star fa-5x"></i>
 
                                     </div>
                                     <div className="col-md-6 text-right">
-                                        <p id="reviewCount">{reviewStore.starCount}</p>
+                                        <p id="reviewCount">{reviewStore.totalStarCount}</p>
                                         <p className="announcement-text">Total Star Count</p>
                                     </div>
                                 </div>

@@ -4,7 +4,7 @@ import { action, computed } from 'mobx';
 class Reviews {
 
     reviewList = [
-        { review: "Absolutely wonderful - silky, sexy and comfortable", stars: 2 },
+        { review: "Absolutely wonderful - silky, sexy and comfortable", stars: 2 }
     ];
 
     @action
@@ -23,9 +23,10 @@ class Reviews {
     }
 
     @computed
-    get starCount() {
+    get totalStarCount() {
         let total = 0;
-        return this.reviewList.map(e => total = total + e.stars);
+        this.reviewList.map(e => total = total + e.stars);
+        return total;
     }
 
     @computed

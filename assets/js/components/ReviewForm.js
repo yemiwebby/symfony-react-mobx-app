@@ -95,6 +95,4 @@ class ReviewForm extends Component {
         )
     }
 }
-
-// ReviewForm = observer(ReviewForm);
 export default ReviewForm;
